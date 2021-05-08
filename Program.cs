@@ -6,29 +6,24 @@ namespace Exercicio_Divisao
     {
         static void Main(string[] args)
         {
-           int numerador, denominador, resultado;
+            double numerador, denominador, resultado;
 
             Console.Write("Coloque o Numerador...: ");
-            numerador = Int16.Parse(Console.ReadLine());
+            numerador = Double.Parse(Console.ReadLine());
 
             Console.Write("Coloque o Denominador...: ");
-            denominador = Int16.Parse(Console.ReadLine());
+            denominador = Double.Parse(Console.ReadLine());
 
-                resultado = numerador / denominador; 
-
-            if (denominador > 0)
+            if (denominador != 0)
             {
+                resultado = numerador / denominador;
                 Console.WriteLine($"{numerador} dividido por {denominador} é {resultado}");
             }
 
             else
             {
-            
                 Console.WriteLine("Não é possivel dividir por zero!");
             }
-                
-
-            
 
         }
     }
